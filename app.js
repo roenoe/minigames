@@ -65,7 +65,7 @@ app.post('/login', async (req, res) => {
 })
 
 function checkloggedin(req, res, next) {
-  if (req.session.loggedi) {
+  if (req.session.loggedin) {
     console.log('Logged in')
     return next()
   } else {
